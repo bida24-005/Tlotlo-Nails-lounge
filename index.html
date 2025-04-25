@@ -3,34 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tlotlo Nails lounge</title>
+  <title>Tlotlo Nails Lounge</title>
+  
+  <style>
+    /* General Reset */
+    body, h1, h2, p, a {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Body and layout */
+    body {
+      background-color: #f7f7f7;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background-color: #6a1b9a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+    }
+
+    /* Navigation bar */
+    nav {
+      background-color: #333;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 1.1em;
+      padding: 10px;
+    }
+
+    nav a:hover {
+      background-color: #6a1b9a;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Main Image */
+    .hero-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      max-height: 400px;
+    }
+
+    /* Services Section */
+    #services {
+      background-color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    #services h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .service-card {
+      display: inline-block;
+      width: 30%;
+      margin: 15px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
 </head>
+
 <body>
 
   <header>
-    <h1>Tlotlo Nails lounge</h1>
+    <h1>Tlotlo Nails Lounge</h1>
+    <p>Your Perfect Nail Experience Awaits</p>
   </header>
 
   <nav>
-    <a href="service.html">Services</a> |
-    <a href="about.html">About</a> |
-    <a href="gallery.html">Gallery</a> |
+    <a href="service.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
     <a href="contact.html">Contact</a>
   </nav>
 
   <div>
-    <img src="(Media.jpg)" alt="Hero Image" style="width: 100%;">
+    <img src="Media.jpg" alt="Hero Image" class="hero-image">
   </div>
 
   <section id="services">
     <h2>Our Services</h2>
-    
-   
-
-  
+    <div class="service-card">
+      <h3>Manicure</h3>
+      <p>Relax and indulge in our luxurious manicure services to make your nails shine.</p>
+    </div>
+    <div class="service-card">
+      <h3>Pedicure</h3>
+      <p>Pamper your feet with our soothing pedicure treatments for ultimate relaxation.</p>
+    </div>
+    <div class="service-card">
+      <h3>Nail Art</h3>
+      <p>Express your personality with custom nail art designed just for you.</p>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Tlotlo nails lounge</p>
+    <p>&copy; 2025 Tlotlo Nails Lounge. All rights reserved.</p>
   </footer>
 
 </body>
