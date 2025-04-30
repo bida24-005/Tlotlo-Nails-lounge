@@ -1,1 +1,94 @@
 
+  <style>
+    /* General Reset */
+    body, h1, h2, p, a {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Body and layout */
+    body {
+      background-color: #f7f7f7;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background-color: #6a1b9a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+    }
+
+    /* Navigation bar */
+    nav {
+      background-color: #333;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 1.1em;
+      padding: 10px;
+    }
+
+    nav a:hover {
+      background-color: #6a1b9a;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Main Image */
+    .hero-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      max-height: 400px;
+    }
+
+    /* Services Section */
+    #services {
+      background-color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    #services h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .service-card {
+      display: inline-block;
+      width: 30%;
+      margin: 15px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
