@@ -1,1 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Tlotlo Nails Lounge</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f5fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #6a1b9a;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    header p {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+
+    nav {
+      background-color: #4e1a73;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #d81b60;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background-image: url('https://via.placeholder.com/1200x400?text=Tlotlo+Nails+Lounge');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(106, 27, 154, 0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+    }
+
+    .buttons {
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .buttons a,
+    .buttons button {
+      display: inline-block;
+      padding: 12px 28px;
+      margin: 10px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .book-btn {
+      background-color: #6a1b9a;
+      color: white;
+      text-decoration: none;
+    }
+
+    .book-btn:hover {
+      background-color: #d81b60;
+    }
+
+    .back-btn {
+      background-color: transparent;
+      color: #6a1b9a;
+      border: 2px solid #6a1b9a;
+    }
+
+    .back-btn:hover {
+      background-color: #d81b60;
+      color: white;
+      border-color: #d81b60;
+    }
+
+    footer {
+      background-color: #6a1b9a;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .hero h2 {
+        font-size: 1.8em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Tlotlo Nails Lounge</h1>
+    <p>Your destination for luxurious nail care</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Welcome to Tlotlo Nails Lounge</h2>
+      <p>Where beauty meets precision. Treat yourself today.</p>
+    </div>
+  </section>
+
+  <div class="buttons">
+    <a href="catalogue.html" class="book-btn">Book Appointment</a>
+    <button onclick="goBack()" class="back-btn">← Go Back</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Tlotlo Nails Lounge. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>
 
