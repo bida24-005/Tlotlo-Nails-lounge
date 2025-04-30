@@ -5,38 +5,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tlotlo Nails Lounge</title>
   <style>
+    /* Resetting some basic elements */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
     /* Basic container styling */
     .container {
-      width: 80%;
+      width: 90%;
       max-width: 1200px;
-      margin: 20px auto;
-      padding: 20px;
+      margin: 40px auto;
+      padding: 40px;
       background-color: #fff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    /* Hover effect for the container */
+    .container:hover {
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+      transform: translateY(-10px);
+    }
+
+    /* Heading styles */
+    h1 {
+      font-size: 2.5em;
+      color: #6a1b9a;
+      margin-bottom: 20px;
+      text-align: center;
     }
 
     /* Paragraph Styling */
     p {
       font-size: 1.1em;
-      line-height: 1.6;
-      color: #333;
+      color: #555;
+      margin-bottom: 20px;
+      line-height: 1.8;
     }
 
     /* Emphasize the bold text */
     strong {
       color: #6a1b9a;
+      font-weight: bold;
+    }
+
+    /* Adding a nice button style for calls-to-action */
+    .cta-button {
+      display: inline-block;
+      padding: 12px 24px;
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #fff;
+      background-color: #6a1b9a;
+      border: none;
+      border-radius: 30px;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    /* Button hover effect */
+    .cta-button:hover {
+      background-color: #d81b60;
+      transform: translateY(-5px);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+        margin: 20px;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1em;
+      }
     }
   </style>
 </head>
 <body>
 
   <div class="container">
+    <h1>Welcome to Tlotlo Nails Lounge</h1>
     <p>At Tlotlo Nails Lounge, we believe every hand and foot deserves a little love. With years of experience, our nail technicians offer a blend of creativity, precision, and care in every session.</p>
     
-    <p>I am a <strong>nail technician</strong>, i am a skilled professional who specializes in the care and beautification of nails. They offer a wide range of services, including manicures, pedicures, nail extensions, gel nails, and intricate nail art designs. Nail techs are trained to ensure proper nail health, cleanliness, and safety while providing personalized services to their clients. Beyond simply polishing nails, they focus on enhancing their client's overall nail appearance and offering customized styles that reflect their unique personality. Nail technicians often stay updated on the latest trends, tools, and techniques in the industry, making them essential for anyone looking to maintain or enhance the look of their nails.</p>
+    <p>I am a <strong>nail technician</strong>, a skilled professional who specializes in the care and beautification of nails. I offer a wide range of services, including manicures, pedicures, nail extensions, gel nails, and intricate nail art designs. Nail techs are trained to ensure proper nail health, cleanliness, and safety while providing personalized services to their clients. Beyond simply polishing nails, they focus on enhancing their client's overall nail appearance and offering customized styles that reflect their unique personality. Nail technicians often stay updated on the latest trends, tools, and techniques in the industry, making them essential for anyone looking to maintain or enhance the look of their nails.</p>
 
     <p>Their attention to detail, creativity, and commitment to customer satisfaction makes them an integral part of the beauty industry.</p>
+
+    <a href="#book" class="cta-button">Book an Appointment</a>
   </div>
 
 </body>
