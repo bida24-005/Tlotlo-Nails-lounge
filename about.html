@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tlotlo Nails Lounge</title>
   <style>
-    /* Resetting some basic elements */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    /* Body styling */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f9f9f9;
@@ -20,7 +18,6 @@
       line-height: 1.6;
     }
 
-    /* Basic container styling */
     .container {
       width: 90%;
       max-width: 1200px;
@@ -32,21 +29,17 @@
       transition: all 0.3s ease-in-out;
     }
 
-    /* Hover effect for the container */
     .container:hover {
       box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
       transform: translateY(-10px);
     }
 
-    /* Heading styles */
-    h1 {
-      font-size: 2.5em;
+    h1, h2 {
+      text-align: center;
       color: #6a1b9a;
       margin-bottom: 20px;
-      text-align: center;
     }
 
-    /* Paragraph Styling */
     p {
       font-size: 1.1em;
       color: #555;
@@ -54,13 +47,11 @@
       line-height: 1.8;
     }
 
-    /* Emphasize the bold text */
     strong {
       color: #6a1b9a;
       font-weight: bold;
     }
 
-    /* Adding a nice button style for calls-to-action */
     .cta-button {
       display: inline-block;
       padding: 12px 24px;
@@ -70,18 +61,31 @@
       background-color: #6a1b9a;
       border: none;
       border-radius: 30px;
-      text-align: center;
       text-decoration: none;
       transition: all 0.3s ease;
+      text-align: center;
     }
 
-    /* Button hover effect */
     .cta-button:hover {
       background-color: #d81b60;
       transform: translateY(-5px);
     }
 
-    /* Responsive adjustments */
+    .team-section {
+      margin-top: 50px;
+    }
+
+    .team-member {
+      margin-bottom: 30px;
+      border-left: 4px solid #6a1b9a;
+      padding-left: 20px;
+    }
+
+    .team-member h3 {
+      color: #4e1a73;
+      margin-bottom: 8px;
+    }
+
     @media (max-width: 768px) {
       .container {
         padding: 20px;
@@ -100,14 +104,38 @@
 
   <div class="container">
     <h1>Welcome to Tlotlo Nails Lounge</h1>
+
     <p>At Tlotlo Nails Lounge, we believe every hand and foot deserves a little love. With years of experience, our nail technicians offer a blend of creativity, precision, and care in every session.</p>
     
     <p>I am a <strong>nail technician</strong>, a skilled professional who specializes in the care and beautification of nails. I offer a wide range of services, including manicures, pedicures, nail extensions, gel nails, and intricate nail art designs. Nail techs are trained to ensure proper nail health, cleanliness, and safety while providing personalized services to their clients. Beyond simply polishing nails, they focus on enhancing their client's overall nail appearance and offering customized styles that reflect their unique personality. Nail technicians often stay updated on the latest trends, tools, and techniques in the industry, making them essential for anyone looking to maintain or enhance the look of their nails.</p>
 
-    <p>Their attention to detail, creativity, and commitment to customer satisfaction makes them an integral part of the beauty industry.</p>
+    <p>Our attention to detail, creativity, and commitment to customer satisfaction makes us an integral part of the beauty industry.</p>
 
     <a href="#book" class="cta-button">Book an Appointment</a>
+
+  <section class="team-section">
+  <h2>Meet the Team</h2>
+  
+  <section class="layout">
+    <div class="team-member">
+      <h3>Tlotlo - Founder & Lead Nail Artist</h3>
+      <p>Tlotlo discovered her passion for nails as a teenager, experimenting with designs for friends and family. What began as a hobby quickly turned into a calling. She founded Tlotlo Nails Lounge to create a space where self-expression through nail art is celebrated. Her favorite designs are elegant, bold, and detailed.</p>
+    </div>
+
+    <div class="team-member">
+      <h3>Mia - Nail Art Specialist</h3>
+      <p>Mia joined the beauty industry after studying fine arts. She saw nails as miniature canvases and found joy in bringing creative ideas to life. Her specialties include 3D designs and seasonal themes. For Mia, making clients smile is the best part of her day.</p>
+    </div>
+
+    <div class="team-member">
+      <h3>Malachi - Gel & Acrylic Expert</h3>
+      <p>Malachi began her journey as a self-taught artist, watching online tutorials during lockdown. Her obsession with perfect structure and durability made her the go-to technician for long-lasting gel and acrylic sets. She loves making clients feel polished and powerful.</p>
+    </div>
+  </section>
+</section>
+
   </div>
 
 </body>
 </html>
+
