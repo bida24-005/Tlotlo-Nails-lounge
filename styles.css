@@ -1,4 +1,106 @@
-  <style>
+/* General page styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header section */
+header {
+  background-color: #6a1b9a;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+/* Container for feedback form */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.container h2 {
+  text-align: center;
+  color: #6a1b9a;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.1em;
+  color: #555;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 150px;
+}
+
+button {
+  background-color: #6a1b9a;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d81b60;
+}
+
+.thank-you-message {
+  display: none;
+  text-align: center;
+  background-color: #d81b60;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Footer styling */
+footer {
+  background-color: #6a1b9a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+
+<style>
     /* Basic reset for margins and padding */
     body, h2, img {
       margin: 0;
