@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact Us | Tlotlo Nails Lounge</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <!-- Header Section -->
@@ -21,23 +21,36 @@
     <p>Address: Block 7, Plot 60477, Gaborone, Botswana</p>
 
     <!-- Contact Form -->
-    <form action="#" method="POST">
+    <form action="#" method="POST" onsubmit="return handleSubmit(event)">
       <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" required placeholder="Your Name">
+      <input type="text" id="name" name="name" required placeholder="Your Name" />
 
       <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" required placeholder="Your Email">
+      <input type="email" id="email" name="email" required placeholder="Your Email" />
 
       <label for="message">Message</label>
       <textarea id="message" name="message" required placeholder="Your Message"></textarea>
 
       <button type="submit">Send Message</button>
+      <button type="button" class="go-back" onclick="history.back()">Go Back</button>
     </form>
+    <p id="form-status" class="status-message"></p>
   </section>
 
   <!-- Footer Section -->
   <footer>
     <p>&copy; 2025 Tlotlo Nails Lounge | All Rights Reserved</p>
   </footer>
+
+  <!-- JavaScript for form handling -->
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      document.getElementById('form-status').textContent = "Your message has been sent successfully!";
+      document.querySelector('form').reset();
+      return false;
+    }
+  </script>
 </body>
 </html>
+
