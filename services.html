@@ -4,112 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tlotlo Nails Lounge</title>
-  
-  <style>
-    /* General Reset */
-    body, h1, h2, h3, p, a {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    /* Body */
-    body {
-      background-color: #f7f7f7;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    /* Header */
-    header {
-      background-color: #6a1b9a;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 2.5em;
-    }
-
-    /* Services Section */
-    #services {
-      background-color: white;
-      padding: 40px 20px;
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    #services h2 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-      color: #6a1b9a;
-    }
-
-    .layout {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .service-card {
-      background-color: #fff;
-      padding: 20px;
-      width: 250px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      margin: 10px;
-    }
-
-    .service-card h3 {
-      color: #6a1b9a;
-      font-size: 1.5em;
-      margin-bottom: 10px;
-    }
-
-    .service-card p {
-      color: #555;
-      font-size: 1em;
-      margin-bottom: 15px;
-    }
-
-    .service-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-
-    /* Booking Button */
-    .booking-btn {
-      background-color: #6a1b9a;
-      color: white;
-      padding: 15px 30px;
-      font-size: 1.2em;
-      text-decoration: none;
-      border-radius: 25px;
-      margin-top: 30px;
-      display: inline-block;
-      transition: background-color 0.3s ease;
-    }
-
-    .booking-btn:hover {
-      background-color: #9c4e97;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -139,12 +34,12 @@
 
       <div class="service-card">
         <h3>Nail enhancement</h3>
-        <p>gel filling and repairs,acrylic fills and redesin.</p>
+        <p>gel filling and repairs, acrylic fills and redesign.</p>
       </div>
 
       <div class="service-card">
         <h3>Add-on treatments</h3>
-        <p>hand and foot massage,cuticle oil treatment,callus removal.</p>
+        <p>hand and foot massage, cuticle oil treatment, callus removal.</p>
       </div>
 
       <div class="service-card">
@@ -155,22 +50,21 @@
 
     <a href="catalogue.html" class="booking-btn">Book Now</a>
   </section>
+
   <div style="text-align: center; margin-top: 20px;">
-  <button onclick="goBack()" style="padding: 10px 20px; background-color: #6a1b9a; color: #fff; border: none; border-radius: 20px; font-size: 1em; cursor: pointer;">
-    ← Go Back
-  </button>
-</div>
-
-<script>
-  function goBack() {
-    window.history.back();
-  }
-</script>
-
+    <button onclick="goBack()" class="go-back-btn">← Go Back</button>
+  </div>
 
   <footer>
     <p>&copy; 2025 Tlotlo Nails Lounge. All rights reserved.</p>
   </footer>
 
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+
 </body>
 </html>
+
