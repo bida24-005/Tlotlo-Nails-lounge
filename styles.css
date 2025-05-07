@@ -1,94 +1,117 @@
 
-  <style>
-    /* General Reset */
-    body, h1, h2, p, a {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
 
-    /* Body and layout */
-    body {
-      background-color: #f7f7f7;
-      color: #333;
-      line-height: 1.6;
-    }
+/* General Reset */
+body, h1, h2, h3, p, a {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
 
-    /* Header */
-    header {
-      background-color: #6a1b9a;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+/* Body */
+body {
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
 
-    h1 {
-      font-size: 2.5em;
-    }
+/* Header */
+header {
+  background-color: #6a1b9a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
 
-    /* Navigation bar */
-    nav {
-      background-color: #333;
-      text-align: center;
-      padding: 10px;
-    }
+h1 {
+  font-size: 2.5em;
+}
 
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-size: 1.1em;
-      padding: 10px;
-    }
+/* Services Section */
+#services {
+  background-color: white;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 20px;
+}
 
-    nav a:hover {
-      background-color: #6a1b9a;
-      transition: background-color 0.3s ease;
-    }
+#services h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #6a1b9a;
+}
 
-    /* Main Image */
-    .hero-image {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      max-height: 400px;
-    }
+.layout {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
-    /* Services Section */
-    #services {
-      background-color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
+.service-card {
+  background-color: #fff;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px;
+}
 
-    #services h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
+.service-card h3 {
+  color: #6a1b9a;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
 
-    .service-card {
-      display: inline-block;
-      width: 30%;
-      margin: 15px;
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+.service-card p {
+  color: #555;
+  font-size: 1em;
+  margin-bottom: 15px;
+}
 
-    .service-card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    }
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
-    /* Footer */
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-    }
-  </style>
+/* Booking Button */
+.booking-btn {
+  background-color: #6a1b9a;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 30px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.booking-btn:hover {
+  background-color: #9c4e97;
+}
+
+/* Back Button */
+.go-back-btn {
+  padding: 10px 20px;
+  background-color: #6a1b9a;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
