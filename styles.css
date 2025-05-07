@@ -70,16 +70,18 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* Hero Section */
+/* Hero Section - Modern Minimal Style */
 .hero {
-  background: url('Media.jpg') center/cover no-repeat;
-  height: 80vh;
+  background: linear-gradient(to right, #8e24aa, #ff80ab);
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 40px 20px;
   position: relative;
-  color: #fff;
-  border-radius: 12px;
+  color: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
 
@@ -88,7 +90,8 @@ nav a:hover {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: linear-gradient(to bottom right, rgba(106, 27, 154, 0.7), rgba(255, 128, 171, 0.4));
+  background: url('Media.jpg') center/cover no-repeat;
+  opacity: 0.25;
   z-index: 0;
 }
 
@@ -96,51 +99,39 @@ nav a:hover {
   position: relative;
   z-index: 1;
   text-align: center;
-  padding: 0 20px;
+  max-width: 800px;
 }
 
 .hero h2 {
-  font-size: 2.8em;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero p {
   font-size: 1.3em;
-  margin: 20px 0;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  opacity: 0.95;
 }
 
 .hero-cta-btn {
-  background-color: #ff4081;
-  color: white;
-  padding: 14px 32px;
+  background-color: #ffffff;
+  color: #6a1b9a;
+  padding: 14px 36px;
   font-size: 1.1em;
   border: none;
   border-radius: 30px;
-  transition: background-color 0.3s ease;
-  display: inline-block;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .hero-cta-btn:hover {
-  background-color: #e91e63;
+  background-color: #d81b60;
+  color: #fff;
 }
-  {
-      margin: 0;
-      font-family: sans-serif;
-    }
-    .container {
-      display: flex;
-      height: 100vh; /* Full height of the viewport */
-    }
-    .image-side {
-      flex: 1;
-      background: url('/mnt/data/8916ad3e-65fc-4cb9-b4ea-3b04322684fb.png') no-repeat center center;
-      background-size: cover;
-    }
-    .content-side {
-      flex: 2;
-      background-color: #f9f6ff; /* Your existing light background */
-      padding: 2rem;
-    }
+
 
 /* Promo Banner */
 .promo-banner {
