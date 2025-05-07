@@ -72,55 +72,6 @@ nav a:hover {
 }
 
 /* Hero Section */
-.hero-section {
-  position: relative;
-  width: 100%;
-  max-height: 500px;
-  overflow: hidden;
-  border-radius: 12px;
-}
-
-.hero-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-  border-radius: 12px;
-  filter: brightness(70%);
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  z-index: 2;
-  padding: 20px;
-}
-
-.hero-overlay h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
-}
-
-.hero-cta-btn {
-  background-color: #ff4081;
-  color: white;
-  padding: 12px 28px;
-  font-size: 1.1em;
-  border: none;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.hero-cta-btn:hover {
-  background-color: #e91e63;
-}
-
 .hero {
   background: url('Media.jpg') center/cover no-repeat;
   height: 80vh;
@@ -129,16 +80,16 @@ nav a:hover {
   justify-content: center;
   position: relative;
   color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .hero::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(106, 27, 154, 0.7), rgba(255, 128, 171, 0.4));
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to bottom right, rgba(106, 27, 154, 0.7), rgba(255, 128, 171, 0.4));
   z-index: 0;
 }
 
@@ -151,10 +102,67 @@ nav a:hover {
 
 .hero h2 {
   font-size: 2.8em;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 .hero p {
   font-size: 1.3em;
+  margin: 20px 0;
+}
+
+/* Promo Banner */
+.promo-banner {
+  background: linear-gradient(to right, #f8bbd0, #ce93d8);
+  color: #4a148c;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 900px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.promo-banner h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.promo-banner p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.promo-banner .book-btn {
+  background-color: #6a1b9a;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1em;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.promo-banner .book-btn:hover {
+  background-color: #d81b60;
+}
+
+
+/* Call-to-action Button */
+.hero-cta-btn {
+  background-color: #ff4081;
+  color: white;
+  padding: 14px 32px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.hero-cta-btn:hover {
+  background-color: #e91e63;
 }
 
 /* Buttons */
@@ -412,4 +420,5 @@ footer {
     align-items: center;
   }
 }
+
 
