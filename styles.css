@@ -1,3 +1,56 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+header {
+    background-color: #6a1b9a; /* Purple color for header */
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header .header-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 400px;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #6a1b9a;
+    margin-top: 30px;
+}
+
 /* Base Reset and Typography */
 * {
   margin: 0;
