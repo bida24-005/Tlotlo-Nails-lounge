@@ -1,3 +1,25 @@
+
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    .container {
+      display: flex;
+      height: 100vh; /* Full height of the viewport */
+    }
+    .image-side {
+      flex: 1;
+      background: url('/mnt/data/8916ad3e-65fc-4cb9-b4ea-3b04322684fb.png') no-repeat center center;
+      background-size: cover;
+    }
+    .content-side {
+      flex: 2;
+      background-color: #f9f6ff; /* Your existing light background */
+      padding: 2rem;
+    }
+  </style>
+
 /* Reset and Base Styles */
 * {
   margin: 0;
