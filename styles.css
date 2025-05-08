@@ -5,14 +5,14 @@
   box-sizing: border-box;
 }
 
-body, h1, h2, p, form, input, textarea {
+body, h1, h2, h3, p, form, input, textarea {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  text-align: center;
 }
 
 body {
-  margin: 0;
   background-color: #f9f5fc;
-  color: #333;
   line-height: 1.6;
   font-size: 1.1em;
   padding: 0 20px;
@@ -23,63 +23,8 @@ a {
   color: inherit;
 }
 
-/* Team Section */
-.team-section {
-  max-width: 1200px;
-  margin: 60px auto;
-  padding: 40px 20px;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
-  text-align: center;
-}
-
-.team-section h2 {
-  font-size: 2.5em;
-  color: #6a1b9a;
-  margin-bottom: 30px;
-}
-
-/* Grid Layout */
-.team-grid {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-/* Team Member Card */
-.team-member {
-  background-color: #faf0ff;
-  padding: 25px 20px;
-  border-radius: 12px;
-  width: 300px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.team-member:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-.team-member h3 {
-  font-size: 1.3em;
-  color: #8e24aa;
-  margin-bottom: 10px;
-}
-
-.team-member p {
-  font-size: 1em;
-  color: #555;
-  line-height: 1.6;
-}
-
-
 h1, h2, h3 {
   color: #6a1b9a;
-  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -106,7 +51,6 @@ header {
   background: linear-gradient(135deg, #8e24aa, #6a1b9a);
   color: white;
   padding: 80px 20px 60px;
-  text-align: center;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   position: relative;
   overflow: hidden;
@@ -122,12 +66,15 @@ header::after {
   z-index: 0;
 }
 
+header h1, header p {
+  position: relative;
+  z-index: 1;
+}
+
 header h1 {
   font-size: 3.2em;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  position: relative;
-  z-index: 1;
   animation: fadeInDown 1.2s ease;
 }
 
@@ -135,24 +82,7 @@ header p {
   font-size: 1.3em;
   opacity: 0.95;
   margin-top: 10px;
-  position: relative;
-  z-index: 1;
   animation: fadeInUp 1.4s ease;
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 1; }
-}
-
-@keyframes fadeInDown {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Navigation */
@@ -202,7 +132,6 @@ nav a:hover {
 .hero-content {
   position: relative;
   z-index: 1;
-  text-align: center;
   padding: 0 20px;
 }
 
@@ -223,9 +152,7 @@ nav a:hover {
   font-size: 1.1em;
   border: none;
   border-radius: 30px;
-  text-decoration: none;
   transition: background-color 0.3s ease;
-  display: inline-block;
 }
 
 .hero-cta-btn:hover {
@@ -237,7 +164,6 @@ nav a:hover {
   background: linear-gradient(to right, #f8bbd0, #ce93d8);
   color: #4a148c;
   padding: 40px 20px;
-  text-align: center;
   border-radius: 12px;
   margin: 40px auto;
   max-width: 900px;
@@ -258,11 +184,8 @@ nav a:hover {
   background-color: #6a1b9a;
   color: white;
   padding: 12px 28px;
-  border: none;
   border-radius: 30px;
   font-size: 1.1em;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
 }
 
 .promo-banner .book-btn:hover {
@@ -271,7 +194,6 @@ nav a:hover {
 
 /* Buttons */
 .buttons {
-  text-align: center;
   margin: 50px 0;
 }
 
@@ -280,10 +202,9 @@ nav a:hover {
   padding: 14px 32px;
   font-size: 1.1em;
   border-radius: 30px;
-  transition: all 0.3s ease;
-  cursor: pointer;
   margin: 10px;
   display: inline-block;
+  cursor: pointer;
 }
 
 .book-btn {
@@ -315,11 +236,11 @@ nav a:hover {
   margin: 40px auto;
   background-color: #fff;
   padding: 40px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-/* Services Section */
+/* Services */
 #services h2 {
   font-size: 2.5em;
 }
@@ -338,7 +259,6 @@ nav a:hover {
   width: 250px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -347,22 +267,10 @@ nav a:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.service-card h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.service-card p {
-  font-size: 1em;
-  color: #555;
-  margin-bottom: 15px;
-}
-
 /* Gallery */
 #gallery {
   padding: 40px 20px;
   background-color: #f7f7f7;
-  text-align: center;
 }
 
 .gallery-container {
@@ -375,7 +283,6 @@ nav a:hover {
 .gallery-container img {
   max-width: 300px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -386,35 +293,24 @@ nav a:hover {
 
 /* Upload Section */
 .upload-section {
-  margin-top: 50px;
+  margin: 50px auto;
   background-color: #fff;
   padding: 20px;
   border-radius: 12px;
   max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.upload-section h3 {
-  color: #6a1b9a;
-  margin-bottom: 10px;
 }
 
 .upload-section input[type="file"] {
-  margin-top: 10px;
-  margin-bottom: 15px;
+  margin: 10px 0 15px;
 }
 
 .upload-section button {
   background-color: #6a1b9a;
   color: white;
-  border: none;
   padding: 10px 16px;
   border-radius: 6px;
   font-size: 1em;
-  cursor: pointer;
 }
 
 .upload-section button:hover {
@@ -423,29 +319,17 @@ nav a:hover {
 
 .status-message {
   color: green;
-  margin-top: 10px;
   font-weight: bold;
+  margin-top: 10px;
 }
 
-/* Contact Section */
+/* Contact */
 #contact {
   margin-top: 40px;
   padding: 20px;
   background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  text-align: center;
-}
-
-#contact h2 {
-  font-size: 2.5em;
-  color: #6a1b9a;
-  margin-bottom: 20px;
-}
-
-#contact p {
-  font-size: 1.1em;
-  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 form {
@@ -453,7 +337,6 @@ form {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  width: 100%;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -475,74 +358,68 @@ textarea {
 button {
   background-color: #6a1b9a;
   color: white;
-  border: none;
   padding: 12px;
   border-radius: 8px;
   font-size: 1.2em;
-  cursor: pointer;
 }
 
 button:hover {
   background-color: #7c4dff;
 }
 
-/* Thank You / Appreciation Message */
+/* Thank You */
 .thank-you-message {
   background-color: #e1bee7;
   color: #4a148c;
-  text-align: center;
   padding: 30px 20px;
   margin: 50px auto 20px;
   border-radius: 12px;
   font-size: 1.2em;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   max-width: 800px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
 /* Footer */
 footer {
   background-color: #333;
   color: white;
-  text-align: center;
   padding: 20px 0;
-  margin-top: 60px;
   font-size: 0.9em;
+  margin-top: 60px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  header h1, .hero h2 {
-    font-size: 2em;
-  }
-
-  .hero p,
-  header p {
-    font-size: 1.1em;
-  }
-
-  .buttons a,
-  .buttons button {
-    width: 80%;
-    font-size: 1em;
-  }
-
-  nav {
-    gap: 15px;
-    flex-direction: column;
-  }
-
-  .layout {
-    flex-direction: column;
-    align-items: center;
-  }
+/* About Section */
+.about-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
 }
-/* Team Grid in About Section */
+
+.about-section p {
+  font-size: 1.1em;
+  color: #555;
+  margin: 12px 0;
+}
+
+/* Team Section */
+.team-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
 .team-grid {
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-top: 40px;
   flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 .team-member {
@@ -550,8 +427,8 @@ footer {
   padding: 20px;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   width: 220px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
 
@@ -568,14 +445,28 @@ footer {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.team-member h3 {
-  font-size: 1.2em;
-  color: #6a1b9a;
-  margin-bottom: 5px;
+/* Animations */
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
 }
 
-.team-member p {
-  font-size: 1em;
-  color: #777;
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1, .hero h2 { font-size: 2em; }
+  header p, .hero p { font-size: 1.1em; }
+  .buttons a, .buttons button { width: 80%; font-size: 1em; }
+  nav { flex-direction: column; gap: 15px; }
+  .layout { flex-direction: column; align-items: center; }
 }
 
