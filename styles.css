@@ -1,6 +1,5 @@
-/* === Global Base Styles === */
+/* Color & Typography Enhancements */
 body {
-  margin: 0;
   background-color: #fff5f9;
   color: #4a2c2a;
   line-height: 1.7;
@@ -12,35 +11,27 @@ h1, h2, h3 {
   color: #b03a66;
 }
 
-/* === Header and Navigation === */
+/* Header */
 header {
-  background: linear-gradient(135deg, #f8c8dc, #b03a66);
+  background: linear-gradient(135deg, #f8c8dc, #b03a66); /* blush to mauve gradient */
   color: white;
   padding: 60px 20px;
   text-align: center;
 }
 
 nav {
-  background-color: #d95f8e;
-  text-align: center;
-  padding: 0.5rem;
-}
-
-nav a {
-  margin: 0 15px;
-  color: #ffffff;
-  font-weight: 600;
-  text-decoration: none;
+  background-color: #d95f8e; /* rich rose pink */
 }
 
 nav a:hover {
-  color: #ffcad4;
+  color: #ffcad4; /* light blush pink */
 }
 
-/* === Hero Section - Split Layout === */
+/* NEW Hero Section - Split Layout */
 .hero {
   display: flex;
   flex-direction: row;
+  background-color: #fff0f5;
   min-height: 90vh;
   border-radius: 16px;
   overflow: hidden;
@@ -58,6 +49,7 @@ nav a:hover {
 
 .hero .hero-text-side h2 {
   font-size: 3em;
+  color: #b03a66;
   margin-bottom: 20px;
 }
 
@@ -77,28 +69,25 @@ nav a:hover {
   font-weight: bold;
   transition: background-color 0.3s ease;
   width: fit-content;
-  cursor: pointer;
 }
 
 .hero .hero-text-side .hero-cta-btn:hover {
   background-color: #d95f8e;
 }
 
+/* Hero Image Side */
 .hero .hero-image-side {
   flex: 1;
   background: url('media.jpg') center/cover no-repeat;
 }
 
-/* === Promo Banner === */
+/* Promo Banner */
 .promo-banner {
   background: linear-gradient(to right, #ffe6ef, #b03a66);
   color: #fff;
-  padding: 2rem;
-  text-align: center;
-  font-weight: bold;
 }
 
-/* === Buttons === */
+/* Buttons Updated */
 .book-btn,
 .back-btn {
   font-size: 1.1em;
@@ -111,8 +100,6 @@ nav a:hover {
 
 .book-btn {
   background-color: #b03a66;
-  color: white;
-  border: none;
 }
 
 .book-btn:hover {
@@ -129,26 +116,5 @@ nav a:hover {
   background-color: #d95f8e;
   color: #fff;
   border-color: #d95f8e;
-}
-
-/* === Neon Glow Box === */
-.neon-box {
-  border: 2px solid #b03a66;
-  box-shadow: 0 0 20px #b03a66, 0 0 30px #d95f8e;
-  padding: 1rem;
-  background: #fff5f9;
-  margin: 2rem auto;
-  width: fit-content;
-  border-radius: 12px;
-  text-align: center;
-}
-
-/* === Footer === */
-footer {
-  background: #fbe3e8;
-  color: #4a2c2a;
-  text-align: center;
-  padding: 2rem;
-  border-top: 2px solid #ffe6ef;
 }
 
