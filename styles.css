@@ -23,6 +23,60 @@ a {
   color: inherit;
 }
 
+/* Team Section */
+.team-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2.5em;
+  color: #6a1b9a;
+  margin-bottom: 30px;
+}
+
+/* Grid Layout */
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Team Member Card */
+.team-member {
+  background-color: #faf0ff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.team-member h3 {
+  font-size: 1.3em;
+  color: #8e24aa;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+
 h1, h2, h3 {
   color: #6a1b9a;
   text-align: center;
