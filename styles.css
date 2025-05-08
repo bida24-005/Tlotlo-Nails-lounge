@@ -78,7 +78,7 @@ nav a:hover {
 /* Hero Image Side */
 .hero .hero-image-side {
   flex: 1;
-  background: url('d') center/cover no-repeat;
+  background: url('download.jpg') center/cover no-repeat;
 }
 
 /* Promo Banner */
