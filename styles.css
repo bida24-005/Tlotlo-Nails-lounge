@@ -121,21 +121,21 @@ a {
   color: #6a1b3f;
 }
 
-/* === Feedback Section === */
+/* === Testimonials Section === */
 
-.feedback {
+.testimonial {
   background-color: #f8bbd0;
   padding: 4rem 2rem;
   text-align: center;
 }
 
-.feedback h2 {
+.testimonial h2 {
   font-size: 2rem;
   color: #880e4f;
   margin-bottom: 2rem;
 }
 
-.feedback {
+.testimonial {
   background-color: #fce4ec;
   padding: 2rem;
   margin: 1rem auto;
