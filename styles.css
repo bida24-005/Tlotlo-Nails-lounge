@@ -480,3 +480,140 @@ footer {
   }
 }
 
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 25px 0;
+  background-color: #f2e7f5;
+  color: #e44d26;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #e44d26;
+  font-size: 2em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #e44d26;
+  box-shadow: 0 0 5px rgba(228, 77, 38, 0.3);
+}
+
+button[type="submit"] {
+  padding: 12px 24px;
+  background-color: #e44d26;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  width: 200px;
+}
+
+button[type="submit"]:hover {
+  background-color: #d13a13;
+}
+
+.thank-you-message {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f0f8e7;
+  border: 1px solid #d3e5b6;
+  border-radius: 5px;
+  color: #388e3c;
+  font-size: 1.1em;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f2e7f5;
+  margin-top: 30px;
+  color: #555;
+  font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+    margin: 30px auto;
+  }
+
+  header h1{
+    font-size: 2em;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 1em;
+  }
+
+  button[type="submit"] {
+    font-size: 1em;
+    width: 100%;
+  }
+}
