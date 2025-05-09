@@ -3,98 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tlotlo Nails Lounge</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <title>[Your Nail Business Name]</title>
+    <link rel="stylesheet" href="style.css"> </head>
 <body>
     <header>
-        <img src="download.png" alt="Beautiful Nails Logo" style="height: 80px;">
-        <h1>Beautiful Nails</h1>
-        <p>Your ultimate nail glam destination</p>
+        <div class="logo">
+            <a href="#">Tlotlo Nails Lounge</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="book.html" class="button">Book Now</a></li>
+                 <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="#services">Services</a> |
-        <a href="#book">Book Now</a> |
-        <a href="#design">Design</a> |
-        <a href="#portfolio">Portfolio</a> |
-        <a href="#contact">Contact</a>
-    </nav>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <p>Choose from a variety of nail styles, colors, and lengths to express your unique personality.</p>
-    </section>
-
-    <section id="book">
-        <h2>Book Your Appointment</h2>
-        <form>
-            <label for="style">Nail Style:</label><br>
-            <select name="style" id="style">
-                <option>Stiletto</option>
-                <option>Coffin</option>
-                <option>Square</option>
-                <option>Almond</option>
-            </select><br><br>
-
-            <label for="color">Color:</label><br>
-            <input type="color" name="color" id="color"><br><br>
-
-            <label for="length">Length:</label><br>
-            <select name="length" id="length">
-                <option>Short</option>
-                <option>Medium</option>
-                <option>Long</option>
-            </select><br><br>
-
-            <button type="submit">Book Now</button>
-        </form>
-    </section>
-
-    <section id="design">
-        <h2>Select Your Nail Design</h2>
-        <form>
-            <label for="design">Choose a Design:</label><br>
-            <select name="design" id="design">
-                <option>French Tips</option>
-                <option>Glitter Ombre</option>
-                <option>Marble Effect</option>
-                <option>Floral Art</option>
-                <option>Geometric Patterns</option>
-            </select><br><br>
-
-            <label for="upload">Or Upload Your Own Design:</label><br>
-            <input type="file" id="upload" name="upload"><br><br>
-
-            <button type="submit">Submit Design</button>
-        </form>
-    </section>
-
-    <section id="portfolio">
-        <h2>Our Portfolio</h2>
-        <p>Browse some of our stunning nail art designs:</p>
-        <div class="portfolio-gallery">
-            <img src="design1.jpg" alt="Design 1" width="200" style="border-radius: 10px; margin: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
-            <img src="design2.jpg" alt="Design 2" width="200" style="border-radius: 10px; margin: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
-            <img src="design3.jpg" alt="Design 3" width="200" style="border-radius: 10px; margin: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
-            <img src="design4.jpg" alt="Design 4" width="200" style="border-radius: 10px; margin: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
-            <img src="design5.jpg" alt="Design 5" width="200" style="border-radius: 10px; margin: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+    <section class="hero">
+        <div class="hero-content">
+            <h1>[Catchy Slogan About Your Nail Services]</h1>
+            <p>[A brief, enticing description of what makes your nail services special.]</p>
+            <a href="book.html" class="button">Book Your Appointment</a>
+        </div>
+        <div class="hero-image">
+            <img src="images/Media.jpg" alt="Beautiful Nail Design">
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Follow Us</h2>
-        <p>
-            <a href="https://www.tiktok.com/@Tlotlo Nails Lounge" target="_blank">TikTok</a> |
-            <a href="https://www.facebook.com/Tlotlo-Nails-Lounge" target="_blank">Facebook</a>
-        </p>
-        <h2>Contact Us</h2>
-        <p>Email:Tlotlonailslounge@beautifulnails.com</p>
-        <p>Phone: +267 77959069</p>
+    <section class="services-preview">
+        <h2>Our Featured Services</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <img src="images/design1.jpg" alt="Manicure">
+                <h3>Manicures</h3>
+                <p>Indulge in our classic and spa manicures.</p>
+                <a href="services.html">Learn More</a>
+            </div>
+            <div class="service-item">
+                <img src="images/pedicure.jpg" alt="Pedicure">
+                <h3>Pedicures</h3>
+                <p>Treat your feet to a relaxing and beautifying experience.</p>
+                <a href="services.html">Learn More</a>
+            </div>
+            <div class="service-item">
+                <img src="images/nail art.jpg" alt="Nail Art">
+                <h3>Nail Art</h3>
+                <p>Express your unique style with our creative nail art designs.</p>
+                <a href="services.html">Learn More</a>
+            </div>
+        </div>
     </section>
 
+    <section class="call-to-action">
+        <div class="cta-content">
+            <h2>Ready for Gorgeous Nails?</h2>
+            <p>Book your appointment today and let us pamper you!</p>
+            <a href="book.html" class="button">Book Now</a>
+        </div>
+    </section>
+    
+
     <footer>
-        <p>&copy; 2025 Beautiful Nails. All rights reserved.</p>
+        <p>&copy; [Year] [Your Nail Business Name]. All rights reserved.</p>
+        <
     </footer>
-</body>
+
+    <script src="script.js"></script> </body>
 </html>
 
