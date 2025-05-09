@@ -47,34 +47,44 @@ nav ul, .navbar-menu {
     align-items: center; /* Vertically align items in nav */
 }
 
+nav ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox for horizontal layout */
+  align-items: center; /* Vertically center items */
+  gap: 1rem; /* Add some gap between the links */
+}
+
 nav li {
-    margin-left: 0; /* Resetting li margin if using gap */
+  margin: 0; /* Reset default list item margins */
 }
 
-nav a, .navbar-item {
-    font-size: 1rem;
-    color: #880e4f; /* Darker pink */
-    transition: color 0.3s ease, background-color 0.3s ease; /* Added background transition */
-    text-decoration: none;
-    padding: 0.5rem 1rem; /* Add some padding */
-    border-radius: 5px; /* Optional: Add rounded corners */
+nav a {
+  display: block; /* Make the whole link area clickable */
+  padding: 0.5rem 1rem; /* Add padding for better appearance */
+  text-decoration: none; /* Remove underlines */
+  color: #333; /* Default link color */
+  border-radius: 0.375rem; /* Rounded corners (optional) */
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Smooth transition */
 }
 
-nav a:hover, .navbar-item:hover {
-    color: #c2185b; /* Brighter pink on hover */
-    background-color: #fddde6; /* Light pink background on hover */
+nav a:hover {
+  color: #007bff; /* Change color on hover (e.g., blue) */
+  background-color: #e9ecef; /* Change background on hover (light gray) */
 }
 
-nav a.button { /* Book Now button */
-    background-color: #e44d26; /* Vibrant orange */
-    color: #fff;
-    padding: 0.75rem 1.5rem; /* Adjust padding for the button */
-    border-radius: 5px;
+/* Style for the "Book Now" button (you can target it specifically) */
+nav a[href="book.html"] {
+  background-color: #007bff; /* Blue background for the button */
+  color: white; /* White text color */
 }
 
-nav a.button:hover {
-    background-color: #c83d1a; /* Darker orange on hover */
+nav a[href="book.html"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
 }
+
+
 
 /* === Hero Section === */
 .hero {
