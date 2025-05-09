@@ -617,3 +617,157 @@ footer {
     width: 100%;
   }
 }
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 25px 0;
+  background-color: #f2e7f5;
+  color: #e44d26;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+#contact {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+#contact h2 {
+  margin-bottom: 20px;
+  color: #e44d26;
+  font-size: 2em;
+}
+
+#contact p {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+#contact a {
+  color: #e44d26;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+form label {
+  margin-bottom: 8px;
+  text-align: left;
+  font-weight: bold;
+  color: #555;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #e44d26;
+  box-shadow: 0 0 5px rgba(228, 77, 38, 0.3);
+}
+
+button[type="submit"], .go-back {
+  padding: 12px 24px;
+  background-color: #e44d26;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px 0;
+}
+
+button[type="submit"]:hover, .go-back:hover {
+  background-color: #d13a13;
+}
+
+.go-back {
+  background-color: #888;
+  margin-top: 0;
+}
+
+.go-back:hover{
+  background-color: #666;
+}
+
+.status-message {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: green;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f2e7f5;
+  margin-top: 30px;
+  color: #555;
+  font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+  #contact {
+    padding: 20px;
+    margin: 30px auto;
+  }
+
+  header h1{
+    font-size: 2em;
+  }
+
+  form input,
+  form textarea {
+    font-size: 1em;
+  }
+
+  button[type="submit"], .go-back {
+    font-size: 1em;
+    width: 100%;
+  }
+}
+
