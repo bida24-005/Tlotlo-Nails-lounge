@@ -39,7 +39,7 @@ header {
 }
 
 nav ul, .navbar-menu {
-    list-style: disc; /* Add filled circles */
+    list-style: none; /* Remove the bullet points */
     padding: 0;
     margin: 0;
     display: flex;
@@ -54,18 +54,21 @@ nav li {
 nav a, .navbar-item {
     font-size: 1rem;
     color: #880e4f; /* Darker pink */
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Added background transition */
     text-decoration: none;
+    padding: 0.5rem 1rem; /* Add some padding */
+    border-radius: 5px; /* Optional: Add rounded corners */
 }
 
 nav a:hover, .navbar-item:hover {
     color: #c2185b; /* Brighter pink on hover */
+    background-color: #fddde6; /* Light pink background on hover */
 }
 
-nav a.button { /* Book Now button in nav */
+nav a.button { /* Book Now button */
     background-color: #e44d26; /* Vibrant orange */
     color: #fff;
-    padding: 10px 15px;
+    padding: 0.75rem 1.5rem; /* Adjust padding for the button */
     border-radius: 5px;
 }
 
@@ -486,4 +489,5 @@ button[type="submit"] { /* Form submit button */
 }
 
 button[type="submit"]:hover {
-    background-color: #d13a1
+    background-color: #d13a13;
+}
