@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Appointment - [Your Nail Business Name]</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="booking-page">
+        <h1>Book Your Nail Appointment</h1>
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Select Your Nail Preferences</legend>
+
+                <div>
+                    <label for="nail-type">Type of Nails:</label>
+                    <select id="nail-type" name="nail-type" required>
+                        <option value="">-- Select --</option>
+                        <option value="acrylic">Acrylic</option>
+                        <option value="gel">Gel</option>
+                        <option value="shellac">Shellac</option>
+                        <option value="natural">Natural Nail Care</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="nail-length">Length:</label>
+                    <select id="nail-length" name="nail-length">
+                        <option value="">-- Select --</option>
+                        <option value="short">Short</option>
+                        <option value="medium">Medium</option>
+                        <option value="long">Long</option>
+                        <option value="extra-long">Extra Long</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="nail-shape">Shape:</label>
+                    <select id="nail-shape" name="nail-shape">
+                        <option value="">-- Select --</option>
+                        <option value="square">Square</option>
+                        <option value="round">Round</option>
+                        <option value="oval">Oval</option>
+                        <option value="almond">Almond</option>
+                        <option value="stiletto">Stiletto</option>
+                        <option value="coffin">Coffin/Ballerina</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="nail-design">Design Preferences (Optional):</label>
+                    <textarea id="nail-design" name="nail-design" rows="4" placeholder="Describe any specific designs, colors, or ideas you have."></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Contact Information</legend>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferred Date and Time</legend>
+                <div>
+                    <label for="appointment-date">Date:</label>
+                    <input type="date" id="appointment-date" name="appointment-date" required>
+                </div>
+                <div>
+                    <label for="appointment-time">Time:</label>
+                    <input type="time" id="appointment-time" name="appointment-time" required>
+                </div>
+                <p class="availability-note">Please note that your preferred time may not be guaranteed. We will contact you to confirm your appointment.</p>
+            </fieldset>
+
+            <button type="submit" class="button">Submit Booking Request</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
