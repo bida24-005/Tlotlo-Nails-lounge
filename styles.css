@@ -1,10 +1,11 @@
-/* General Reset & Typography */
+/* === Base Styles === */
+
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff8fb;
-  color: #333;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #fff0f5;
+  color: #333;
 }
 
 a {
@@ -12,7 +13,214 @@ a {
   color: inherit;
 }
 
-/* Header */
+/* === Navbar === */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffe4ec;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c2185b;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-item {
+  font-size: 1rem;
+  color: #880e4f;
+  transition: color 0.3s ease;
+}
+
+.navbar-item:hover {
+  color: #c2185b;
+}
+
+/* === Hero Section === */
+
+.hero {
+  background-color: #f8bbd0;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #880e4f;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #6a1b3f;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: #c2185b;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ad1457;
+}
+
+/* === Services Section === */
+
+.services {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #c2185b;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.service-item {
+  background-color: #fce4ec;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-item h3 {
+  margin-bottom: 1rem;
+  color: #880e4f;
+}
+
+.service-item p {
+  color: #6a1b3f;
+}
+
+/* === Feedback Section === */
+
+.feedback {
+  background-color: #f8bbd0;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.feedback h2 {
+  font-size: 2rem;
+  color: #880e4f;
+  margin-bottom: 2rem;
+}
+
+.feedback {
+  background-color: #fce4ec;
+  padding: 2rem;
+  margin: 1rem auto;
+  border-radius: 10px;
+  max-width: 600px;
+  color: #6a1b3f;
+  font-style: italic;
+}
+
+/* === Footer === */
+
+.footer {
+  background-color: #ffe4ec;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #a8325c;
+  border-top: 2px solid #f2a2b1;
+}
+
+/* === Promo Banner === */
+
+.promo-banner {
+  background-color: #fddde6;
+  color: #880e4f;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 1.1rem;
+  border-top: 2px solid #e91e63;
+  border-bottom: 2px solid #e91e63;
+}
+
+/* === Split Section (New) === */
+
+.split-text {
+  background-color: #fff0f5;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  border-top: 2px solid #f2a2b1;
+  border-bottom: 2px solid #f2a2b1;
+  color: #5c2a3e;
+}
+
+/* === Hero Overlay (Optional Variant) === */
+
+.hero-overlay {
+  background-color: rgba(255, 240, 246, 0.85);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero .btn-book {
+  background-color: #c2185b;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.hero .btn-book:hover {
+  background-color: #ad1457;
+}
+
+/* === Alternate Navbar (Optional) === */
+
+.navbar-custom {
+  background-color: #ffe4ec;
+  border-bottom: 2px solid #f2a2b1;
+}
+
+.navbar-custom .nav-link {
+  color: #c2185b !important;
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+}
+
+.navbar-custom .nav-link:hover {
+  background-color: #fddde6;
+  border-radius: 5px;
+}
+
+/* === Header Branding (New) === */
+
 .header {
   background-color: #fddde6;
   padding: 1rem 2rem;
@@ -32,70 +240,7 @@ a {
   color: #8c2f39;
 }
 
-/* Navigation Bar */
-.navbar-custom {
-  background-color: #ffe4ec;
-  border-bottom: 2px solid #f2a2b1;
-}
-
-.navbar-custom .nav-link {
-  color: #c2185b !important;
-  font-weight: 500;
-  padding: 0.75rem 1rem;
-}
-
-.navbar-custom .nav-link:hover {
-  background-color: #fddde6;
-  border-radius: 5px;
-}
-
-/* Hero Section */
-.hero {
-  position: relative;
-  background: url('downloadimage.jpg') center/cover no-repeat;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.hero-overlay {
-  background-color: rgba(255, 240, 246, 0.85);
-  padding: 2rem;
-  border-radius: 10px;
-}
-
-.hero h1 {
-  font-size: 2rem;
-  color: #880e4f;
-  margin-bottom: 1rem;
-}
-
-.hero .btn-book {
-  background-color: #c2185b;
-  color: white;
-  padding: 0.6rem 1.2rem;
-  border: none;
-  border-radius: 5px;
-}
-
-.hero .btn-book:hover {
-  background-color: #ad1457;
-}
-
-/* Promo Banner */
-.promo-banner {
-  background-color: #f8bbd0;
-  padding: 1.5rem 1rem;
-  text-align: center;
-  color: #6a1b3f;
-}
-
-.promo-banner h2 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
+/* === Additional Promo Button === */
 
 .promo-banner .btn-offer {
   background-color: #6a1b3f;
@@ -109,27 +254,4 @@ a {
 .promo-banner .btn-offer:hover {
   background-color: #4a1030;
 }
-
-/* Split Section */
-.split-text {
-  background-color: #fff0f5;
-  padding: 2rem;
-  text-align: center;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  border-top: 2px solid #f2a2b1;
-  border-bottom: 2px solid #f2a2b1;
-  color: #5c2a3e;
-}
-
-/* Footer */
-.footer {
-  background-color: #ffe4ec;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: #a8325c;
-  border-top: 2px solid #f2a2b1;
-}
-
 
