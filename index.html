@@ -7,79 +7,94 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <header class="header">
-        <div class="brand">Tlotlo Nails Lounge</div>
-        <p class="tagline">Your one-stop destination for beautiful nails!</p>
+    <header>
+        <img src="download.png" alt="Beautiful Nails Logo" style="height: 80px;">
+        <h1>Beautiful Nails</h1>
+        <p>Your ultimate nail glam destination</p>
     </header>
-
-    <nav class="navbar navbar-custom">
-        <a href="#" class="nav-link">Home</a>
-        <a href="#services" >Services</a>
+    <nav>
+        <a href="#services">Services</a> |
+        <a href="#book">Book Now</a> |
+        <a href="#design">Design</a> |
+        <a href="#portfolio">Portfolio</a> |
         <a href="#contact">Contact</a>
-        <a href="#About" >About</a>
-        <a href="#Gallery" >Gallery</a>
-        <a href="#feedback">Feedback</a>
-
     </nav>
 
-    <section class="hero">
-        <div class="hero-overlay">
-            <h1>Welcome to Tlotlo Nails Lounge!</h1>
-            <p>Experience the finest nail care and artistry.</p>
-            <a href="#services" class="btn btn-book">Book Now</a>
-        </div>
-    </section>
-
-    <div class="promo-banner">
-        <h2>Special Offer Just for You!</h2>
-        <p>Enjoy 15% off your first manicure. Treat yourself!</p>
-        <a href="#services" class="btn btn-offer">Get the Offer</a>
-    </div>
-
-    <section id="services" class="services">
+    <section id="services">
         <h2>Our Services</h2>
-        <div class="service-grid">
-            <div class="service-item">
-                <h3>Manicures</h3>
-                <p>Classic, gel, and spa manicures for perfectly polished nails.</p>
-            </div>
-            <div class="service-item">
-                <h3>Pedicures</h3>
-                <p>Relaxing and rejuvenating pedicures to pamper your feet.</p>
-            </div>
-            <div class="service-item">
-                <h3>Nail Art</h3>
-                <p>Express your style with our creative and unique nail art designs.</p>
-            </div>
-            <div class="service-item">
-                <h3>Extensions</h3>
-                <p>Add length and glamour with our high-quality nail extensions.</p>
-            </div>
+        <p>Choose from a variety of nail styles, colors, and lengths to express your unique personality.</p>
+    </section>
+
+    <section id="book">
+        <h2>Book Your Appointment</h2>
+        <form>
+            <label for="style">Nail Style:</label><br>
+            <select name="style" id="style">
+                <option>Stiletto</option>
+                <option>Coffin</option>
+                <option>Square</option>
+                <option>Almond</option>
+            </select><br><br>
+
+            <label for="color">Color:</label><br>
+            <input type="color" name="color" id="color"><br><br>
+
+            <label for="length">Length:</label><br>
+            <select name="length" id="length">
+                <option>Short</option>
+                <option>Medium</option>
+                <option>Long</option>
+            </select><br><br>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section id="design">
+        <h2>Select Your Nail Design</h2>
+        <form>
+            <label for="design">Choose a Design:</label><br>
+            <select name="design" id="design">
+                <option>French Tips</option>
+                <option>Glitter Ombre</option>
+                <option>Marble Effect</option>
+                <option>Floral Art</option>
+                <option>Geometric Patterns</option>
+            </select><br><br>
+
+            <label for="upload">Or Upload Your Own Design:</label><br>
+            <input type="file" id="upload" name="upload"><br><br>
+
+            <button type="submit">Submit Design</button>
+        </form>
+    </section>
+
+    <section id="portfolio">
+        <h2>Our Portfolio</h2>
+        <p>Browse some of our stunning nail art designs:</p>
+        <div class="portfolio-gallery">
+            <img src="design1.jpg" alt="Design 1" width="200" style="border-radius: 10px; margin: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+            <img src="design2.jpg" alt="Design 2" width="200" style="border-radius: 10px; margin: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+            <img src="design3.jpg" alt="Design 3" width="200" style="border-radius: 10px; margin: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+            <img src="design4.jpg" alt="Design 4" width="200" style="border-radius: 10px; margin: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+            <img src="design5.jpg" alt="Design 5" width="200" style="border-radius: 10px; margin: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
         </div>
     </section>
 
-    <section class="split-text">
-        <h2>About Us</h2>
-        <p>At Tlotlo Nails Lounge, we are passionate about providing exceptional nail care in a relaxing and welcoming atmosphere. Our skilled technicians are dedicated to delivering beautiful results and ensuring your comfort.</p>
+    <section id="contact">
+        <h2>Follow Us</h2>
+        <p>
+            <a href="https://www.tiktok.com/@Tlotlo Nails Lounge" target="_blank">TikTok</a> |
+            <a href="https://www.facebook.com/Tlotlo-Nails-Lounge" target="_blank">Facebook</a>
+        </p>
+        <h2>Contact Us</h2>
+        <p>Email:Tlotlonailslounge@beautifulnails.com</p>
+        <p>Phone: +267 77959069</p>
     </section>
 
-    <section class="testimonials">
-        <h2>What Our Clients Say</h2>
-        <div class="testimonial">
-            <p>"The best nail salon I've ever been to! My nails always look amazing."</p>
-            <p><strong>– Thato M., Gaborone</strong></p>
-        </div>
-        <div class="testimonial">
-            <p>"Friendly staff and excellent service. I always leave feeling pampered."</p>
-            <p><strong>– Kelebogile S., Block 5</strong></p>
-        </div>
-    </section>
-
-
-    <footer class="footer">
-        <p>&copy; 2025 Tlotlo Nails Lounge. All rights reserved.</p>
+    <footer>
+        <p>&copy; 2025 Beautiful Nails. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
+
