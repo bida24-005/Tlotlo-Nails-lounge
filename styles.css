@@ -1076,3 +1076,130 @@ footer {
     text-align: center;
   }
 }
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 25px 0;
+  background-color: #f2e7f5;
+  color: #e44d26;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+#services {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+#services h2 {
+  margin-bottom: 30px;
+  font-size: 2em;
+  color: #e44d26;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.service-card {
+  padding: 20px;
+  background-color: #f2e7f5;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.service-card:hover {
+  background-color: #e0d4e3;
+}
+
+.service-card h3 {
+  margin-bottom: 12px;
+  color: #e44d26;
+  font-size: 1.3em;
+}
+
+.service-card p {
+  color: #555;
+  font-size: 1.1em;
+}
+
+.booking-btn,
+.go-back-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.booking-btn {
+  background-color: #e44d26;
+  color: white;
+}
+
+.booking-btn:hover {
+  background-color: #d13a13;
+}
+
+.go-back-btn {
+  background-color: #888;
+  color: white;
+  margin-top: 20px;
+}
+
+.go-back-btn:hover {
+  background-color: #666;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f2e7f5;
+  margin-top: 30px;
+  color: #555;
+  font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-btn,
+  .go-back-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
