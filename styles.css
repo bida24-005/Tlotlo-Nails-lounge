@@ -39,7 +39,7 @@ header {
 }
 
 nav ul, .navbar-menu {
-    list-style: none;
+    list-style: disc; /* Add filled circles */
     padding: 0;
     margin: 0;
     display: flex;
