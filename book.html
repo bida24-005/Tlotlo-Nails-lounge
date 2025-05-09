@@ -9,7 +9,7 @@
 <body>
     <main class="booking-page">
         <h1>Book Your Nail Appointment</h1>
-        <form action="#" method="POST">
+        <form id="booking-form">
             <fieldset>
                 <legend>Select Your Nail Preferences</legend>
 
@@ -88,6 +88,17 @@
         </form>
     </main>
 
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("booking-form");
+
+            form.addEventListener("submit", function (e) {
+                e.preventDefault(); // Stop form from submitting
+                alert("Thank you! Your appointment request has been submitted.");
+                form.reset(); // Optional: Clear form
+            });
+        });
+    </script>
 </body>
 </html>
+
