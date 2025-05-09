@@ -2,61 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tlotlo Nails Lounge</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" /> <!-- Link your CSS file here -->
 </head>
-
 <body>
 
   <!-- Header -->
-  <header>
-    <h1>Tlotlo Nails Lounge</h1>
-    <p>Your Perfect Nail Experience Awaits</p>
+  <header class="header">
+    <div class="brand">Tlotlo Nails Lounge</div>
+    <div class="tagline">Your Perfect Nail Experience Awaits</div>
   </header>
 
   <!-- Navigation -->
-  <nav>
-    <a href="home.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="about.html">About</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
-    <a href="feedback.html">Feedback</a>
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand d-lg-none" href="#">Tlotlo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <!-- Hero Section with Overlay Text -->
-  <div class="hero-section">
-    <img src="downloadimage.jpg" alt="Nail Lounge Interior" class="hero-image" />
-    <div class="hero-text">
-      <h2>Your Luxury Nail Experience Awaits</h2>
-      <a href="booking.html" class="hero-cta-btn">Book Now</a>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1>Your Luxury Nail Experience Awaits</h1>
+      <button class="btn btn-book">Book Now</button>
     </div>
-  </div>
+  </section>
 
   <!-- Promo Banner -->
   <section class="promo-banner">
-    <div class="promo-content">
-      <h2>🌸 Winter Special: 20% Off All Nail Services! 🌸</h2>
-      <p>Celebrate the season with fresh nails. Limited time only!</p>
-      <a href="booking.html" class="book-btn">Claim Offer</a>
-    </div>
+    <h2>🌸 Winter Special: 20% Off All Nail Services! 🌸</h2>
+    <p>Celebrate the season with fresh nails.</p>
+    <button class="btn btn-offer">Claim Offer</button>
   </section>
 
-  <!-- Split Section (Butterfly Image + Text) -->
-  <section class="split-section">
-    <div class="content-side full-width">
-      <h2>Elegance in Every Detail</h2>
-      <p>Discover a space where beauty meets relaxation. At Tlotlo Nails Lounge, our professionals craft flawless nails while you unwind in luxury. Let your style shine through every stroke.</p>
-    </div>
+  <!-- Split Section -->
+  <section class="split-text">
+    <h3>Elegance in Every Detail</h3>
+    <p>
+      Discover a space where beauty meets relaxation. At Tlotlo Nails Lounge, our professionals
+      craft flawless nails while you unwind in luxury. Let your style shine through every stroke.
+    </p>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Tlotlo Nails Lounge. All rights reserved.</p>
+  <footer class="footer">
+    © 2025 Tlotlo Nails Lounge. All rights reserved.
   </footer>
 
+  <!-- Bootstrap JS (for navbar toggle) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
 
